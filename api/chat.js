@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     body: JSON.stringify({
       model: 'llama3-8b-8192',
       messages: [{ role: 'user', content: user_input }],
-      max_tokens: 512
+      max_tokens: 2048
     })
   }).then(r => r.json());
 
